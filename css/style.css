@@ -192,9 +192,61 @@ body {
 }
 .waiting__text span {
   font-weight: 700;
+  font-style: normal;
 }
 .waiting__icon {
   position: absolute;
   left: -25px;
   top: -15px;
+}
+
+/* Подключение about-Julia */
+.about-Julia {
+  padding-bottom: 176px;
+}
+.about-Julia__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.about-Julia__history, .about-Julia__progress, .about-Julia__suggestion {
+  line-height: 24px;
+  font-style: italic;
+  width: 650px;
+}
+.about-Julia__history span, .about-Julia__progress span, .about-Julia__suggestion span {
+  font-style: normal;
+  font-weight: 700;
+}
+.about-Julia__history {
+  margin-bottom: 38px;
+}
+.about-Julia__progress {
+  margin-bottom: 20px;
+}
+.about-Julia__progress-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 560px;
+}
+.about-Julia__progress-item {
+  margin-bottom: 20px;
+}
+.about-Julia__progress-item--title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+}
+.about-Julia__progress-item--descr {
+  font-style: italic;
+}
+.about-Julia__wrapper {
+  position: relative;
+}
+.about-Julia__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
