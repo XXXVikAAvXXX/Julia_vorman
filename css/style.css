@@ -52,6 +52,9 @@ body {
 }
 
 /* Подключение promo */
+.promo {
+  margin-bottom: 182px;
+}
 .promo__wrapper {
   position: relative;
 }
@@ -85,4 +88,78 @@ body {
 }
 .promo__btn {
   margin-right: 26px;
+}
+
+/* Подключение intensive */
+.intensive {
+  padding-top: 167px;
+  padding-bottom: 182px;
+  background: #fff;
+  color: #4C3D74;
+}
+.intensive__descr {
+  color: #504178;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.intensive__list {
+  display: flex;
+  justify-content: space-between;
+}
+.intensive__icon {
+  position: absolute;
+  top: 15px;
+  left: -45px;
+}
+.intensive__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #F2EEF7;
+  border: 3px solid #4C3D74;
+  border-radius: 30px;
+  width: 341px;
+  height: 138px;
+}
+.intensive__item--text {
+  max-width: 236px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4C3D74;
+}
+.intensive__item--text span {
+  font-weight: 700;
+  color: #4C3D74;
+  font-style: normal;
+}
+.intensive__comment {
+  color: #4C3D74;
+  width: 450px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  margin-right: 95px;
+}
+.intensive__btn {
+  display: block;
+}
+.intensive__inner {
+  margin-top: 43px;
+  display: flex;
+  align-items: center;
+}
+.intensive__wrapper {
+  position: relative;
+}
+.intensive__sticker {
+  position: absolute;
+  width: 243px;
+  height: 243px;
+  bottom: -182px;
+  right: 0;
 }
