@@ -24,4 +24,31 @@ body
         background: #A387C4
     &__dark
         border: 3px solid #A387C4
-    
+.main-nav
+    position: relative
+.hamburger
+    position: absolute
+    right: 0
+    display: none
+    background: none
+    border: none
+    cursor: pointer
+    span
+        display: block
+        width: 40px
+        height: 2px
+        background-color: #fff
+        &:not(:last-child)
+            margin-bottom: 8px
+    &--active
+        z-index: 15
+        top: -63px
+        right: -13px
+        span
+            margin-bottom: -5px
+            &:nth-child(1)
+                transform: translateY(12px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(1px) rotate(45deg)

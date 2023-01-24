@@ -34,6 +34,45 @@ body {
   border: 3px solid #A387C4;
 }
 
+.main-nav {
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+.hamburger span:not(:last-child) {
+  margin-bottom: 8px;
+}
+.hamburger--active {
+  z-index: 15;
+  top: -63px;
+  right: -13px;
+}
+.hamburger--active span {
+  margin-bottom: -5px;
+}
+.hamburger--active span:nth-child(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+.hamburger--active span:nth-child(2) {
+  display: none;
+}
+.hamburger--active span:nth-child(3) {
+  transform: translateY(1px) rotate(45deg);
+}
+
 /* Подключение header */
 .main-nav {
   margin-top: 105px;
@@ -249,4 +288,269 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+/* Подключение media-стилей АДАПТИВ */
+@media (max-width: 1250px) {
+  .container {
+    max-width: 768px;
+  }
+  .main-nav__item:not(:last-child) {
+    padding-right: 25px;
+  }
+  .promo {
+    margin-bottom: 110px;
+  }
+  .promo__title-second {
+    width: 480px;
+    font-size: 40px;
+  }
+  .promo__sticker {
+    width: 400px;
+    height: 400px;
+  }
+  .promo__glow {
+    right: -420px;
+    top: -380px;
+  }
+  .waiting {
+    margin: 110px 0 110px;
+  }
+  .waiting__item {
+    justify-content: end;
+  }
+  .waiting__icon {
+    left: 30px;
+  }
+  .waiting__title {
+    font-size: 40px;
+  }
+  .intensive {
+    padding-top: 110px;
+    padding-bottom: 250px;
+  }
+  .intensive__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intensive__item {
+    margin-bottom: 70px;
+  }
+  .intensive__item--text {
+    width: 225px;
+  }
+  .intensive__icon {
+    top: -70px;
+    left: 120px;
+  }
+  .intensive__descr {
+    font-size: 40px;
+    margin-bottom: 100px;
+  }
+  .intensive__inner {
+    margin: 0;
+    flex-direction: column;
+  }
+  .intensive__comment {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .intensive__sticker {
+    width: 220px;
+    height: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -251px;
+  }
+  .about-Julia__title {
+    font-size: 40px;
+  }
+  .about-Julia__history, .about-Julia__progress {
+    width: 100%;
+  }
+  .about-Julia__progress-list {
+    width: 360px;
+  }
+  .about-Julia__suggestion {
+    width: 325px;
+  }
+  .about-Julia__img {
+    right: 40px;
+    bottom: 50px;
+    width: 340px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 576px;
+  }
+  .promo {
+    margin-bottom: 400px;
+  }
+  .promo__glow {
+    display: none;
+  }
+  .promo__title {
+    text-align: center;
+  }
+  .promo__title-second {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+  }
+  .promo__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .promo__descr {
+    text-align: center;
+    font-size: 18px;
+  }
+  .promo__sticker {
+    width: 309px;
+    height: 309px;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main-nav__list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #A387C4;
+    z-index: 10;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s all;
+    text-align: center;
+  }
+  .main-nav__list--active {
+    left: 50%;
+  }
+  .main-nav__item {
+    padding: 20px 0 20px;
+    border-bottom: 1px solid #8061cf;
+  }
+  .main-nav__item:not(:last-child) {
+    padding-right: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+  .intensive__descr,
+.waiting__title,
+.about-Julia__title {
+    font-size: 32px;
+  }
+  .waiting {
+    margin: 80px 0;
+  }
+  .waiting__list {
+    justify-content: center;
+  }
+  .waiting__item {
+    margin-bottom: 40px;
+  }
+  .about-Julia {
+    padding-bottom: 500px;
+  }
+  .about-Julia__img {
+    bottom: -450px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about-Julia__progress-list, .about-Julia__suggestion {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 320px;
+  }
+  .main-nav {
+    margin-top: 80px;
+  }
+  .promo__sticker {
+    top: 450px;
+  }
+  .promo__title {
+    margin-top: 70px;
+    font-size: 18px;
+  }
+  .promo__descr {
+    font-size: 16px;
+  }
+  .intensive {
+    padding-top: 90px;
+  }
+  .intensive__descr {
+    font-size: 26px;
+  }
+  .intensive__comment {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .intensive__icon {
+    width: 70px;
+    height: 70px;
+    top: -55px;
+  }
+  .waiting__title,
+.about-Julia__title {
+    font-size: 26px;
+  }
+  .waiting__icon {
+    left: 0;
+  }
+  .waiting__text {
+    max-width: 245px;
+  }
+  .about-Julia__progress-item--title {
+    font-size: 30px;
+  }
+  .about-Julia__progress-item {
+    width: 147px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    max-width: 300px;
+  }
+  .promo__title {
+    font-size: 16px;
+  }
+  .promo__title-second {
+    font-size: 30px;
+  }
+  .promo__descr br {
+    display: none;
+  }
+  .promo__sticker {
+    top: 470px;
+  }
+  .intensive__item {
+    width: 270px;
+    margin-bottom: 60px;
+  }
+  .intensive__icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .intensive__comment {
+    font-size: 16px;
+  }
+  .intensive__sticker {
+    width: 180px;
+    height: 200px;
+  }
+  .about-Julia__img {
+    width: 100%;
+  }
+  .waiting__text {
+    max-width: 225px;
+  }
 }
