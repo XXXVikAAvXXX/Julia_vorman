@@ -163,3 +163,38 @@ body {
   bottom: -182px;
   right: 0;
 }
+
+/* Подключение waiting */
+.waiting {
+  margin: 168px 0 146px;
+}
+.waiting__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 47px;
+}
+.waiting__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.waiting__item {
+  position: relative;
+  width: 382px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.waiting__text {
+  max-width: 276px;
+  font-style: italic;
+}
+.waiting__text span {
+  font-weight: 700;
+}
+.waiting__icon {
+  position: absolute;
+  left: -25px;
+  top: -15px;
+}
