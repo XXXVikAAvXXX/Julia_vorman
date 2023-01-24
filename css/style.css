@@ -8,6 +8,7 @@
   list-style: none;
   text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .container {
@@ -17,6 +18,20 @@
 
 body {
   background-color: #4C3D74;
+}
+
+.button {
+  display: inline-block;
+  width: 245px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 20px 67px;
+}
+.button__light {
+  background: #A387C4;
+}
+.button__dark {
+  border: 3px solid #A387C4;
 }
 
 /* Подключение header */
@@ -34,4 +49,40 @@ body {
 }
 .main-nav__item:not(:last-child) {
   padding-right: 40px;
+}
+
+/* Подключение promo */
+.promo__wrapper {
+  position: relative;
+}
+.promo__glow {
+  position: absolute;
+  right: -380px;
+  top: -350px;
+  z-index: -1;
+}
+.promo__sticker {
+  position: absolute;
+  top: -85px;
+  right: -70px;
+}
+.promo__title {
+  margin: 106px 0 23px 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+.promo__title-second {
+  font-weight: 700;
+  font-size: 50px;
+  max-width: 760px;
+  margin-bottom: 47px;
+}
+.promo__descr {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 44px;
+}
+.promo__btn {
+  margin-right: 26px;
 }
